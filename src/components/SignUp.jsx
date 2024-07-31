@@ -1,7 +1,8 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
-import './SignUp.css'
+import './SignUp.css';
 
 function SignUp() {
   const [formData, setFormData] = useState({
@@ -112,15 +113,15 @@ function SignUp() {
             />
           </div>
           <div className="checkbox">
-            <input type="checkbox" id="checkbox"/>
-            <label htmlFor="checkbox" required>
-              I agree to the <a href="">Terms of Service</a> and <a href="">Privacy Policy</a>
+            <input type="checkbox" id="checkbox" required />
+            <label htmlFor="checkbox">
+              I agree to the <a href="#">Terms of Service</a> and 
+              <a href="#">Privacy Policy</a>
             </label>
           </div>
-          <div  className="btn">
-          <button type="submit">Create Your Free Account</button>
+          <div className="btn">
+            <button type="submit">Create Your Free Account</button>
           </div>
-          
         </form>
       </div>
     </div>

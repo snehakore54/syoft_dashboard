@@ -1,15 +1,14 @@
 import React, { useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom"; // Import useNavigate
 import "../App.css";
-import './Login.css'
-
+import './Login.css';
 
 function Login() {
   const [formData, setFormData] = useState({
     user_email: "",
     user_password: "",
   });
-  const navigate = useNavigate();
+  const navigate = useNavigate(); // Use useNavigate to get navigate function
 
   const handleChange = (event) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
